@@ -1,7 +1,0 @@
-  {
-      "type": "command",
-      "key": "OS Lifetime (days)",
-      "text": "bash -lc 'b=$(stat -c %W / 2>/dev/null); if [ -z \"$b\" ] || [ \"$b\" -le 0 ]; then echo Unknown; else echo $(( ( $(date +%s) - b ) / 86400 )) days; fi'",
-      "keyColor": "#8e0000",
-      "outputColor": "#8e0000"
-    }
